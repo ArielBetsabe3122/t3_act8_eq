@@ -1,0 +1,92 @@
+/* Contenedor de la Tarjeta de Cristal */
+.glass-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.glass-card h2 {
+  font-size: 26px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Contenedores de inputs */
+.input-group {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 13px;
+  color: rgba(13, 2, 2, 0.7); /* Texto sutil */
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Campos de texto minimalistas (Estilo la línea de la imagen) */
+.glass-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Solo línea inferior */
+  padding: 10px 0px;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.glass-input:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.9); /* Resalta al escribir */
+}
+
+.glass-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Mensajes de Error */
+.error-text {
+  color: #ff4a5a;
+  font-size: 13px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Botón de Login con Degradado de Acento (El 10%) */
+.glass-btn {
+  width: 100%;
+  padding: 14px;
+  /* Degradado de azul a púrpura de acento */
+  background: linear-gradient(90deg, #5165ff 0%, #7e42ff 100%);
+  border: none;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(126, 66, 255, 0.3);
+}
+
+.glass-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(126, 66, 255, 0.5);
+}
+
+.glass-btn:disabled {
+  background: rgba(255, 255, 255, 0.2);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
