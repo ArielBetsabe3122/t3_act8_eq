@@ -3,7 +3,7 @@
 - Márquez Agustín Briseida.
 - López Guerrero Ariel Betsabe.
 
-## Link del Git de API de Usuario.
+## Link del API de Usuario.
 https://dummyjson.com/auth/login
 
 ## API utilizadO para la Tabla de Datos.
