@@ -12,12 +12,12 @@ export const loginUser = async (username, password) => {
     body: JSON.stringify({ username, password })
   });
 
-  // Si la respuesta no es correcta (status 400, etc.), lanzamos un error
+  // Si la respuesta no es correcta, lanzamos un error
   if (!response.ok) {
     const errorData = await response.json();
     throw new Error(errorData.message || 'Usuario o contraseña incorrectos');
   }
 
-  // Si todo sale bien, retornamos los datos del usuario (incluyendo token e image)
+  // Si todo sale bien, retornamos los datos del usuario
   return await response.json();
 };

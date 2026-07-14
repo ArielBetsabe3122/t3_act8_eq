@@ -35,22 +35,26 @@ export const LoginForm = ({ onLoginSuccess }) => {
 
   return (
     <div className="glass-card">
-       <img className="ICONO-LOGIN" src="/img/login.png" alt="Ariel" style={{ width: '110px', height: '110px', borderRadius: '50%' }} />
+        <div className="usuario-container">
+         <img src="/img/login.png" alt="User" className="user-a" />
+         </div>
       <form onSubmit={handleSubmit}>
-        
         <div className="input-group">
+        <div className="label-container">
           <label>Usuario</label>
-          <input 
-            type="text" 
-            className="glass-input"
-            value={username}
+          <img src="/img/iconoCorreo.png" alt="correo" className="input-icon"/>
+        </div>
+          <input type="text" className="glass-input" value={username}
             onChange={(e) => setUsername(e.target.value)}
-            placeholder="Ej. emilys"
+            placeholder="Ej.user "
           />
         </div>
 
         <div className="input-group">
+        <div className="label-container">
           <label>Contraseña</label>
+          <img src="/img/iconoContraseña.png" className="input-icon" alt="Lock" width="20" height="20" />
+          </div>
           <input 
             type="password" 
             className="glass-input"

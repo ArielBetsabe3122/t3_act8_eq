@@ -53,6 +53,37 @@
 .glass-input::placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
+.usuario-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* El avatar negro circular */
+.user-a {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.input-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 5px; 
+}
+
+.label-container {
+  display: flex;
+  align-items: center; 
+  gap: 8px;            
+  margin-bottom: 8px;  
+}
+.input-group label {
+  margin-bottom: 0px !important; 
+  display: inline-block;
+}
 
 /* Mensajes de Error */
 .error-text {

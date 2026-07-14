@@ -4,9 +4,12 @@ html, body, #root {
   padding: 0;
   box-sizing: border-box;
   width: 100% ;
-  min-height: 100vh;
-  height: 100vh;
-  font-family: 'Poppins', 'Inter', sans-serif;
+  height: 100vh ; /* Fuerza la altura exacta de la ventana */
+  min-height: 100vh ;
+  display: flex ;
+  justify-content: center ;
+  align-items: center; /* Centrado vertical matemático */
+  overflow: hidden;
 }
 
 /* Flexbox para centrar absolutamente todo en la pantalla */
