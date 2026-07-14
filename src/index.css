@@ -1,0 +1,22 @@
+/* Limpieza absoluta de márgenes ocultos de Vite */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100% ;
+  min-height: 100vh;
+  height: 100vh;
+  font-family: 'Poppins', 'Inter', sans-serif;
+}
+
+/* Flexbox para centrar absolutamente todo en la pantalla */
+body {
+  display: flex ;
+  justify-content: center ;
+  align-items: center ;
+  /* Degradado limpio: del azul cian de arriba al tono más suave abajo */
+  background: linear-gradient(180deg, #3bb6e6 0%, #a1c8e7 60%, #cbd9ed 100%) !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

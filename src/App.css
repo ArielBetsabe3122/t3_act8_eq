@@ -1,0 +1,414 @@
+/* Contenedor de la Tarjeta de Cristal */
+.glass-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.glass-card h2 {
+  font-size: 26px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Contenedores de inputs */
+.input-group {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 13px;
+  color: rgba(13, 2, 2, 0.7); /* Texto sutil */
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Campos de texto minimalistas (Estilo la línea de la imagen) */
+.glass-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Solo línea inferior */
+  padding: 10px 0px;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.glass-input:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.9); /* Resalta al escribir */
+}
+
+.glass-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Mensajes de Error */
+.error-text {
+  color: #ff4a5a;
+  font-size: 13px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Botón de Login con Degradado de Acento (El 10%) */
+.glass-btn {
+  width: 100%;
+  padding: 14px;
+  /* Degradado de azul a púrpura de acento */
+  background: linear-gradient(90deg, #5165ff 0%, #7e42ff 100%);
+  border: none;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(126, 66, 255, 0.3);
+}
+
+.glass-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(126, 66, 255, 0.5);
+}
+
+.glass-btn:disabled {
+  background: rgba(255, 255, 255, 0.2);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+/* 
+   FASE 2: Sidebar + Navbar (Dashboard)*/
+
+.dashboard-layout {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+/* --- Sidebar --- */
+.sidebar-glass {
+  width: 220px;
+  flex-shrink: 0;
+  padding: 25px 18px;
+  text-align: left;
+  align-self: stretch;
+}
+
+.sidebar-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 25px 4px;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.sidebar-item.active {
+  background: linear-gradient(90deg, #5165ff 0%, #7e42ff 100%);
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(126, 66, 255, 0.35);
+}
+
+.sidebar-icon {
+  font-size: 16px;
+}
+
+/* --- Main column (navbar + contenido) --- */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* --- Navbar --- */
+.navbar-glass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 22px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.navbar-username {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar-username small {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+}
+
+.logout-btn {
+  width: auto;
+  padding: 10px 20px;
+  font-size: 13px;
+  background: linear-gradient(90deg, #ff4a5a 0%, #ff7a42 100%);
+  box-shadow: 0 8px 20px rgba(255, 74, 90, 0.3);
+}
+
+.logout-btn:hover {
+  box-shadow: 0 12px 25px rgba(255, 74, 90, 0.5);
+}
+
+/* ---( Tabla en Fase 3) --- */
+.content-card {
+  padding: 30px;
+  text-align: left;
+}
+
+.content-card h1 {
+  color: #ffffff;
+  font-size: 22px;
+  margin: 0;
+}
+/* 
+   FASE 3: Tabla de productos con filtros, paginación y CRUD*/
+.content-card {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+}
+
+.products-table-wrapper {
+  width: 100%;
+}
+
+.table-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.filters-bar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-input {
+  min-width: 200px;
+}
+
+.filter-select {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  padding: 10px 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.filter-select option {
+  color: #1f2937;
+}
+
+.loading-text {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #ffffff;
+}
+
+.data-table th, .data-table td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 14px;
+}
+
+.data-table th {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 600;
+}
+
+.actions-cell {
+  display: flex;
+  gap: 8px;
+}
+
+.table-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.table-btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.table-btn.danger {
+  background: rgba(255, 74, 90, 0.3);
+}
+
+.table-btn.danger:hover {
+  background: rgba(255, 74, 90, 0.5);
+}
+
+.pagination-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.limit-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.limit-selector select {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 4px 8px;
+}
+
+.limit-selector select option {
+  color: #1f2937;
+}
+
+.page-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.page-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* --- Modal de agregar/editar producto --- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal-box {
+  width: 360px;
+  max-width: 90vw;
+}
+
+.modal-box h2 {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: none !important;
+}
