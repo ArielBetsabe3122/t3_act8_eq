@@ -6,7 +6,7 @@
 ## Link del API de Usuario.
 https://dummyjson.com/auth/login
 
-## API utilizadO para la Tabla de Datos.
+## Link del API utilizadO para la Tabla de Datos.
 
 DummyJSON Productos-https://dummyjson.com/products
 
