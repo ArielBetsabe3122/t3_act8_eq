@@ -36,13 +36,13 @@ export const LoginForm = ({ onLoginSuccess }) => {
   return (
     <div className="glass-card">
         <div className="usuario-container">
-         <img src="/img/login.png" alt="user" className="user-a" />
+         <img src={`${import.meta.env.BASE_URL}img/login.png`} alt="user" className="user-a" />
          </div>
       <form onSubmit={handleSubmit}>
         <div className="input-group">
         <div className="label-container">
           <label>Usuario</label>
-          <img src="/img/iconoCorreo.png" alt="user" className="input-icon"/>
+          <img src={`${import.meta.env.BASE_URL}img/iconoCorreo.png`} alt="user" className="input-icon"/>
         </div>
           <input type="text" className="glass-input" value={username}
             onChange={(e) => setUsername(e.target.value)}
@@ -53,7 +53,7 @@ export const LoginForm = ({ onLoginSuccess }) => {
         <div className="input-group">
         <div className="label-container">
           <label>Contraseña</label>
-          <img src="/img/iconoContraseña.png" alt="password" className="input-icon"/>
+          <img src={`${import.meta.env.BASE_URL}img/iconoContrasena.png`} alt="password" className="input-icon"/>
           </div>
           <input 
             type="password" 
